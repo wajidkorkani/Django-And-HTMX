@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<title>Home</title>
+{% endblock %}
+<script src="{% static 'htmx.min.js' %}"></script>
+{% block body %}
+<h1>{{ text }}</h1>
+<br>
+
+<button hx-confirm="Are you sure?">Conform</button>
+{% endblock %}
