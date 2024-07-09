@@ -13,4 +13,12 @@
 <button hx-delete="/test" hx-confirm="Are you sure you wish to delete your account?">
     Delete My Account
   </button>
+
+<button hx-indicator="#loading" hx-get="https://fakestoreapi.com/products" hx-target="#api">Get data</button>
+
+<span class="htmx-indicator" id="loading">
+    <img src="{% static 'one.gif' %}" alt="loading...">
+</span>
+
+<div id="api"></div>
 {% endblock %}
