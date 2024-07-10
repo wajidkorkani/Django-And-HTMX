@@ -19,14 +19,22 @@ This project demonstrates a seamless integration between Django, a powerful Pyth
    ```
 
 - Initialize a virtual environment (recommended for managing project dependencies):
-
+   
+   # For Linux and MacOS
    ```bash
+   pip install virtualenv
    python -m venv venv
-   source venv/bin/activate  # For Linux/macOS
-   venv\Scripts\activate.bat  # For Windows
+   source venv/bin/activate
    ```
 
-**2. Install HTMX:**
+   # For Windows
+   ```bash
+   pip install virtualenv
+   python -m venv venv
+   venv\Scripts\activate.bat
+   ```
+
+**2. Install Requirements:**
 
 - Install all requirements using pip:
 
