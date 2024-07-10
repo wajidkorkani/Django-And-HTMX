@@ -28,7 +28,7 @@ This project demonstrates a seamless integration between Django, a powerful Pyth
 
 **2. Install HTMX:**
 
-- Install HTMX using pip:
+- Install all requirements using pip:
 
    ```bash
    pip install -r requirements.txt
