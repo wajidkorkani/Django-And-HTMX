@@ -2,6 +2,46 @@
 
 This project demonstrates a seamless integration between Django, a powerful Python web framework, and HTMX, a lightweight JavaScript framework that enables server-driven, interactive web experiences.
 
+**# Work With This Project**
+
+**Prerequisites:**
+
+- Python (version 3.6 or later recommended)
+- pip (Python package installer)
+- A code editor or IDE of your choice
+- A GitHub account (optional, but recommended for version control)
+
+
+**1. Initialize a virtual environment**
+   
+   # For Linux and MacOS
+   ```bash
+   pip install virtualenv
+   python -m venv venv
+   source venv/bin/activate
+   ```
+
+   # For Windows
+   ```bash
+   pip install virtualenv
+   python -m venv venv
+   venv\Scripts\activate.bat
+   ```
+
+
+**2. Install Requirements:**
+
+- Install all requirements using pip:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+
+**# Create And Setup Your Own Project**
+
+
 **Prerequisites:**
 
 - Python (version 3.6 or later recommended)
@@ -39,7 +79,10 @@ This project demonstrates a seamless integration between Django, a powerful Pyth
 - Install all requirements using pip:
 
    ```bash
-   pip install -r requirements.txt
+   pip install django
+   pip install asgiref
+   pip install django-htmx
+   pip install sqlparse
    ```
 
 - Generate a new Django project:
@@ -78,6 +121,13 @@ This project demonstrates a seamless integration between Django, a powerful Pyth
    ```
 
    - Replace `<path_to_htmx_static>` with the actual path to HTMX's static files. You can usually find it in the `node_modules/htmx.org/dist` directory of your project's virtual environment.
+
+- Go to this link and copy the all code which will be dispaly on the browser screen and and paste it in the htmx.min.js file and htmx.min.js file should be here mysite/static/htmx/:
+
+   ```python
+   https://unpkg.com/htmx.org@2.0.1/dist/htmx.min.js
+   ```
+
 
 - Add these lines to `STATICFILES` in `mysite/settings.py`:
 
